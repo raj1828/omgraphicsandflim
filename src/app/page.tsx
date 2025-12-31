@@ -1,12 +1,18 @@
-import { Button } from "@/components/ui/button";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-white dark:bg-black">
-      <h1 className="text-4xl font-semibold text-black dark:text-white">
-        OM Graphics and Film
-      </h1>
-      <Button> Click Me </Button>
-    </div>
+    <main>
+      {/* HERO */}
+      <section className="h-screen pt-20 relative">
+        <div className="absolute inset-0">
+          {/* background image */}
+        </div>
+
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <h1 className="text-white text-5xl font-light">
+            Capturing Timeless Moments
+          </h1>
+        </div>
+      </section>
+    </main>
   );
 }
