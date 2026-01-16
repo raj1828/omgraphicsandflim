@@ -20,14 +20,11 @@ export default function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 z-50 w-full transition-all duration-300",
-          scrolled
-            ? "bg-white/90 backdrop-blur-md shadow-sm"
-            : "bg-transparent"
+          "fixed top-0 left-0 z-50 w-full backdrop-blur-md transition-all duration-300",
+          scrolled ? "bg-white/85 shadow-sm" : "bg-white/40"
         )}
       >
         <nav className="mx-auto flex h-[88px] max-w-[1800px] items-center justify-between px-6 md:px-16">
-          
           {/* Left navigation (desktop only) */}
           <ul className="hidden md:flex gap-10">
             {NAV_LEFT.map((item) => (
